@@ -12,9 +12,9 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-# Install Java 8, Java 11 & Docker
+# Install Java 11 & Docker
 apt update
-apt install -y openjdk-8-jdk openjdk-11-jdk docker.io maven
+apt install -y openjdk-11-jdk docker.io maven
 usermod -a -G docker ubuntu
 
 # Install Trivy
